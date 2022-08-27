@@ -1,15 +1,15 @@
-.description-list {
+.info__list {
     display: flex;
     align-items: center;
 
 }
 
-.description-item:not(:last-child) {
+.info__item:not(:last-child) {
     margin-right: 30px;
 
 }
 
-.description-soc {
+.info__soc {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@
 
 }
 
-.description-title {
+.description__title {
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
@@ -32,8 +32,7 @@
 
 }
 
-.description-text {
-
+.description__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;

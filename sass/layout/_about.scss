@@ -1,4 +1,4 @@
-.about-title {
+.about__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -9,24 +9,23 @@
 
 }
 
-.about-picture {
+.picture {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.about-item {
+.picture__item {
     position: relative;
 }
 
-.about-text {
+.picture__text {
     position: absolute;
     bottom: 0;
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    ;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;

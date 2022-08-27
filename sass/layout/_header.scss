@@ -2,14 +2,14 @@
     border-bottom: 1px solid #ECECEC;
     padding-top: 24px;
     padding-bottom: 25px;
-}
-
-.header>.container {
+    >.container {
     display: flex;
     align-items: center;
+    }
 }
 
-.logo-header {
+
+.header__logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -17,11 +17,9 @@
     letter-spacing: 0.03em;
     color: #000000;
     margin-right: 93px;
-
-
 }
 
-.logo-web {
+.logo-text {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -31,27 +29,27 @@
 
 }
 
-.header-nav {
+.navigation {
     display: flex;
     align-items: center;
 }
 
-.header-list {
+.navigation__list {
     display: flex;
     align-items: center;
 
 }
 
-.header-item {
+.navigation__item {
     list-style: none;
-
-}
-
-.header-item:not(:last-child) {
+    &:not(:last-child) {
     margin-right: 50px;
+    }
+
 }
 
-.header-link {
+
+.navigation__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -59,22 +57,17 @@
     letter-spacing: 0.02em;
     color: var(--first-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+     color: var(--hover-color)
+    }
 
 
 }
-
-.header-link:hover,
-.header-link:focus {
-    color: var(--hover-color)
-}
-
 .current {
     position: relative;
     color: var(--hover-color);
-
-}
-
-.current::after {
+    &::after {
     position: absolute;
     width: 100%;
     content: '';
@@ -85,36 +78,34 @@
     bottom: -32px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
+ }
+        
 }
 
-
-
-.header-contacts {
+.header__connect {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
 
-.header-contacts-item:not(:last-child) {
+.connect__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.header-icon {
+.connect__icon {
     display: flex;
     align-items: center;
     fill: currentColor;
     margin-right: 10px;
-
-}
-
-.header-icon:hover,
-.header-icon:focus {
+    &:hover,
+    &:focus {
     background-color: #FFFFFF;
     fill: currentColor;
+        }
+
 }
 
-
-.header-mail {
+.connect__mail {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -124,16 +115,13 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.header-mail:hover,
-.header-mail:focus {
+    &:hover,
+    &:focus {
     color: var(--hover-color);
+    }
 
 }
-
-.header-tel {
+.connect__tel {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
@@ -143,10 +131,10 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.header-tel:hover,
-.header-tel:focus {
+    &:hover,
+    &:focus {
     color: var(--hover-color)
+    }
+
 }
+
