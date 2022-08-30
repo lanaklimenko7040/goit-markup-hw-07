@@ -104,6 +104,7 @@ img {
   top: 8px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   background-color: #FFFFFF;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -490,7 +491,7 @@ img {
   margin-bottom: 30px;
 }
 
-.description__title {
+.info__title {
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -501,7 +502,7 @@ img {
   margin-bottom: 10px;
 }
 
-.description__text {
+.info__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
